@@ -1,0 +1,40 @@
+/**
+*@author 杨烁
+*button 按钮样式
+*/
+
+.btn{display: block;
+    width:100px ;height: 30px;
+    text-align: center;margin:4px 5px;
+    padding-top:10px;
+    /*background-color: #3385ff;*/
+    color:#000;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+.btn:hover{background: #22ffff;color:#000 }
+
+.btn.blue{background-color: #3385ff;color:#fff;}
+.btn.blue:hover{background: #317ef3;color:white }
+
+.btn.red{background-color: #F00;color:#fff;}
+.btn.red:hover{background: #317ef3;color:white }
+
+.btn.orange{background-color: #F60;color:#fff;}
+.btn.orange:hover{background: #317ef3;color:white }
+
+.btn.yellow{background-color: #FF0;color:#fff;}
+.btn.yellow:hover{background: #317ef3;color:white }
+
+.btn.green{background-color: #0C0;color:#fff;}
+.btn.green:hover{background: #317ef3;color:white }
+
+.btn.nicely{background-color: #699;color:#fff;}
+.btn.nicely:hover{background: #317ef3;color:white }
+
+.btn.blue{background-color: #06C;color:#fff;}
+.btn.blue:hover{background: #317ef3;color:white }
+
+.btn.purple{background-color: #909;color:#fff;}
+.btn.purple:hover{background: #317ef3;color:white }

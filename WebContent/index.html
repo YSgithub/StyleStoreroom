@@ -10,20 +10,48 @@
 
     <!--css,js-->
     <style type="text/css">
-        body{margin: 0;padding: 0;}
-        /*.btn { border: 1px solid #12F;width:90% ;height:50px;margin: 120px auto;}*/
-        .btn {display: block;width:100px ;height: 30px;text-align: center;margin:4px 5px; padding-top:10px;
-            background-color: #3385ff;color:#fff;text-decoration: none;border-radius: 6px;box-shadow: 1px 1px 1px 1px #ccc;
-        }
-        .btn:hover{background: #317ef3;color:white }
+        /*body{margin: 0;padding: 0;}*/
     </style>
+    <link rel="stylesheet" type="text/css" href="resource/css/button.css" />
+    <link rel="stylesheet" href="resource/js/responsive-nav/responsive-nav.css">
+    <script src="resource/js/responsive-nav/responsive-nav.js"></script>
 </head>
 <body>
-<header>
-    <div class="navigation">
-        <a href="#" class = "btn">Button样式</a>
+    <div id="nav">
+        <ul>
+            <li><a href="#" class = "btn">默认</a></li>
+            <li><a href="#" class = "btn blue">red赤</a></li>
+            <li><a href="#" class = "btn orange">Orange橙</a></li>
+            <li><a href="#" class = "btn yellow">yellow黄</a></li>
+            <li><a href="#" class = "btn green">green绿</a></li>
+            <li><a href="#" class = "btn nicely">nicely青</a></a></li>
+            <li><a href="#" class = "btn blue">blue蓝</a></li>
+            <li><a href="#" class = "btn purple">purple紫</a></li>
+        </ul>
     </div>
-</header>
 
+    <!--导航插件-->
+    <script type="text/javascript">
+//        var navigation = responsiveNav("#nav");
+                var navigation = responsiveNav("#nav", { // Selector: The ID of the wrapper
+                    animate: true, // Boolean: 是否启动CSS过渡效果（transitions）， true 或 false
+                    transition: 400, // Integer: 过渡效果的执行速度，以毫秒（millisecond）为单位
+                    label: "Menu", // String: Label for the navigation toggle
+                    insert: "after", // String: Insert the toggle before or after the navigation
+                    customToggle: "", // Selector: Specify the ID of a custom toggle
+                    openPos: "relative", // String: Position of the opened nav, relative or static
+                    jsClass: "js", // String: 'JS enabled' class which is added to <html> el
+                    debug: false, // Boolean: Log debug messages to console, true 或 false
+                    init: function(){}, // Function: Init callback
+                    open: function(){}, // Function: Open callback
+                    close: function(){} // Function: Close callback
+                });
+
+        //        // 销毁插件
+                navigation.destroy();
+        //
+        //        // Toggle
+                navigation.toggle();
+    </script>
 </body>
 </html>
